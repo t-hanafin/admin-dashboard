@@ -5,66 +5,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <title>Admin Dashboard</title>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <div class="top">
-                <div class="search">
-                    search bar
+                <div class="top-left">
+                    <img src="./SVGs/search.svg" class="search-icon" alt="search-icon" />
+                    <input type="text" id="search-bar" placeholder="Search bar..." />
                 </div>
-                <div class="icon">Icon 1</div>
-                <div class="icon">Icon 2</div>
-                <div class="icon">Icon 3</div>
-                <div class="icon">Icon 4</div>
+                <div class="top-right">
+                    <img src="./SVGs/alarm.svg" class="alarm-icon" alt="alarm-icon" />
+                    <img src="./SVGs/user.svg" class="user-icon" alt="user-icon" />
+                    <div class="user-name">Some User</div>
+                </div>
             </div>
+            
             <div class="bottom">
                 <div class="greeting">
-                    Hi some person
+                    <img src="./SVGs/user.svg" class="user-greeting-icon" alt="user-greeting-icon" />
+                    <div class="hello">Hello,</div>
+                    <div class="user-name-greeting">Some User @some_user</div>
                 </div>
                 <div class="buttons">
-                    <button class="header-buttons">Button 1</button>
-                    <button class="header-buttons">Button 2</button>
-                    <button class="header-buttons">Button 3</button>
+                    <button class="header-buttons">New</button>
+                    <button class="header-buttons">Upload</button>
+                    <button class="header-buttons">Save</button>
                 </div>                
             </div>
         </div>
         <div class="sidebar">
             <div class="sidebar-title">
+                <img src="./SVGs/apps.svg" class="dashboard-icon" id="title-icon" alt="dashboard" />
                 Dashboard
             </div>
             <div class="sidebar-section-one">
-                <div class="sidebar-item">Home</div>
-                <div class="sidebar-item">Profile</div>
-                <div class="sidebar-item">Messages</div>
-                <div class="sidebar-item">History</div>
-                <div class="sidebar-item">Tasks</div>
-                <div class="sidebar-item">Communities</div>
-            </div>
-            <div class="sidebar-section-two">
-                <div class="sidebar-item">Settings</div>
-                <div class="sidebar-item">Support</div>
-                <div class="sidebar-item">Privacy</div>
+                <div class="sidebar-item">
+                    <img src="./SVGs/home.svg" class="dashboard-icon" alt="home" />
+                    Home
+                </div>
+                <div class="sidebar-item">
+                    <img src="./SVGs/profile.svg" class="dashboard-icon" alt="profile" />
+                    Profile
+                </div>
+                <div class="sidebar-item">
+                    <img src="./SVGs/messages.svg" class="dashboard-icon" alt="messages" />
+                    Messages
+                </div>
+                <div class="sidebar-item">
+                    <img src="./SVGs/history.svg" class="dashboard-icon" alt="history" />
+                    History
+                </div>
+                <div class="sidebar-item">
+                    <img src="./SVGs/tasks.svg" class="dashboard-icon" alt="tasks" />
+                    Tasks
+                </div>
+                <div class="sidebar-item">
+                    <img src="./SVGs/communities.svg" class="dashboard-icon" alt="communities" />
+                    Communities
+                </div>
+                <br>
+                <br>
+                <div class="sidebar-item">
+                    <img src="./SVGs/settings.svg" class="dashboard-icon" alt="settings" />
+                    Settings
+                </div>
+                <div class="sidebar-item">
+                    <img src="./SVGs/support.svg" class="dashboard-icon" alt="support" />
+                    Support
+                </div>
+                <div class="sidebar-item">
+                    <img src="./SVGs/privacy.svg" class="dashboard-icon" alt="privacy" />
+                    Privacy
+                </div>
             </div>
         </div>
 
         <div class="main">
-            <div class="projects">
-                <h3>Your Projects</h3>
-                <div class="project-cards">
-                    <div class="card"></div>
+            <div class="main-left">
+                <div class="title" id="project-title">
+                    Your Projects
+                </div>
+                <div class="project-card">
+                    <div class="title">Project Title</div>
+                    <p>This is my project. It's fantastic.</p>
+                </div>
+                <div class="project-card">
+                    <div class="title">Project Title</div>
+                    <p>This is my project. It's fantastic.</p>
+                </div>
+                <div class="project-card">
+                    <div class="title">Project Title</div>
+                    <p>This is my project. It's fantastic.</p>
+                </div>
+                <div class="project-card">
+                    <div class="title">Project Title</div>
+                    <p>This is my project. It's fantastic.</p>
+                </div>
+                <div class="project-card">
+                    <div class="title">Project Title</div>
+                    <p>This is my project. It's fantastic.</p>
+                </div>
+                <div class="project-card">
+                    <div class="title">Project Title</div>
+                    <p>This is my project. It's fantastic.</p>
                 </div>
             </div>
-            <div class="announcements">
-                <h3>Announcements</h3>
-                <div class="card"></div>
+
+            <div class="main-right">
+                <div class="announcements">
+                    <div class="title" id="announcements-title">Announcements</div>
+                    <div class="announcements-box">
+
+                    </div>
+                </div>
+                <div class="trending">
+                    <div class="title" id="trending-title">Trending</div>
+                    <div class="trending-box">
+
+                    </div>
+                </div>
             </div>
-            <div class="trending">
-                <h3>Trending</h3>
-                <div class="card"></div>
-            </div>
-        </div>
+        </div>                
     </div>
 </body>
 </html>
